@@ -6,7 +6,10 @@ TEST_CASE("Verify Test Configuration", "verification") {
 	REQUIRE(true == true);
 }
 
-TEST_CASE("test")
+TEST_CASE("factorial string")
 {
-	REQUIRE(test_config() == true);
+	REQUIRE(factorial(3) == "3*2*1=6");
+	REQUIRE(factorial(4) == "4*3*2*1=24");
+	REQUIRE(factorial(5) == "5*4*3*2*1=120");
+	REQUIRE(factorial(6) == "6*5*4*3*2*1=720");
 }
